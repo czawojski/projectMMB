@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Project Mini Message Board Form</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <nav><%- include('navbar', {links: links}) %></nav>
+
+    <div class="formarea">
+
+      <h2>Post a Message</h2>
+
+      <form method="POST" action="/new">
+        <label for="name">Author's name:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Project Mini Message Board Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="detailbackground">
+    <%- include('navbar', {links: links}) %>
+    <div class="cardcontainer">
+
+    <div class="card">
+      <div class="msgcontainer">
+        <p>Message: <%= message.text %></p>
+      </div>
+      <div class="namecontainer">
+        <h4><b>User: <%= message.user %></b></h4>
+        <p>Posted on: <%= message.added.toLocaleString() %></p>
+      </div>
+    </div>
+
+    </div>
+    <!-- <article>
+      <h2><%= message.user %></h2>
+      <p><%= message.text %></p>
+      <p><%= message.added.toLocaleString() %></p>
+    </article> -->
+  </body>
+</html>

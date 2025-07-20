@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Project Mini Message Board Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <nav><%- include('navbar', {links: links}) %></nav>
+    <!-- <div>
+      <% messages.forEach((message, index) => { %>
+        <li><%= message.user %> said: "<%= message.text %>" on <%= message.added.toLocaleString()%><a href="/details/<%= index %>"><button>Open</button></a></li>
+      <% }) %>
+    </div> -->
+
+    <div class="indexcontainer">
+    <% messages.forEach((message, index) => { %>
+    <div class="indexcard">
+      <div class="msgcontainer">
+        <p><%= message.text %></p>
+      </div>
+      <div class="namecontainer">
+        <h4><b><%= message.user %></b></h4>
+        <p><%= message.added.toLocaleString() %></p>
+      </div>
+      <div class="btn">
+        <a href="/details/<%= index %>"><button>Open</button></a></li>
+      </div>
+    </div>
+    <% }) %>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "projectmmb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czawojski/projectMMB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/czawojski/projectMMB/issues"
+  },
+  "homepage": "https://github.com/czawojski/projectMMB#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
